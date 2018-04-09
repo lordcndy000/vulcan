@@ -1,7 +1,8 @@
 @import 'vars';
 @import 'mixins';
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 @import 'utils';
 @import 'preloader';
-@import 'section-welcome';
+@import 'sections/section-welcome';
 @import 'nav';
+@import 'sections/section-about';

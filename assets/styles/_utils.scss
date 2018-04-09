@@ -9,3 +9,14 @@
 .d-block {
   display: block !important;
 }
+
+.page-section {
+  padding: 100px 0;
+}
+
+.heading-separator {
+  background-color: $colorAccent;
+  height: 3px;
+  margin: 0 auto;
+  width: 70px;
+}

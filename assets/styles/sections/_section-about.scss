@@ -1,0 +1,102 @@
+main {
+  .about-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    & > h2 {
+      color: $colorDark;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .profile-row {
+      display: flex;
+      margin-top: 100px;
+      width: 100%;
+      .profile-col {
+        width: 50%;
+        &:first-child {
+          .profile-img-wrapper {
+            border-radius: 50%;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+            width: 300px;
+            img {
+              display: block;
+              max-width: 100%;
+            }
+            &:hover .overlay {
+              opacity: 1;
+            }
+            &:hover .social-icons-wrapper {
+              opacity: 1;
+              top: 0;
+            }
+            .overlay {
+              background-color: rgba(10, 127, 161, 0.5);
+              bottom: 0;
+              left: 0;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              transition: all 0.2s ease-in-out;
+              width: 100%;
+            }
+            .social-icons-wrapper {
+              align-items: center;
+              display: flex;
+              height: 100%;
+              justify-content: center;
+              opacity: 0;
+              position: absolute;
+              top: -5px;
+              transition: all 0.2s ease-in-out;
+              width: 100%;
+              a {
+                &.social-icon {
+                  border-radius: 50%;
+                  display: block;
+                  height: 35px;
+                  margin: 0 10px;
+                  width: 35px;
+                  padding: 7px;
+                  transition: all 0.2s ease-in-out;
+                  img {
+                    display: block;
+                    height: 100%;
+                    max-width: 100%;
+                    width: 100%;
+                  }
+                  &:hover {
+                    background-color: rgba(255, 192, 3, 0.5);
+                  }
+                }
+              }
+            }
+          }
+          & > h3 {
+            color: $colorDark;
+            font-size: 24px;
+            text-align: center;
+          }
+          & > p {
+            color: $colorDark;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0 10px;
+            text-align: center;
+          }
+        }
+        &:last-child {
+        }
+      }
+    }
+  }
+}
