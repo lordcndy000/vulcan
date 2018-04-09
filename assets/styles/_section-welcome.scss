@@ -13,7 +13,7 @@ main {
     position: relative;
     width: 100%;
     .overlay {
-      background-color: rgba(76, 211, 245, 0.5);
+      background-color: rgba(10, 127, 161, 0.5);
       bottom: 0;
       height: 100%;
       left: 0;
@@ -44,7 +44,7 @@ main {
         margin-bottom: 35px;
         margin-top: 0;
         .highlight {
-          color: $colorHighlight;
+          color: $colorAccent;
         }
       }
       a {
@@ -74,7 +74,7 @@ main {
           width: 0.45em;
         }
         &:hover {
-          background-color: rgba(76, 211, 245, 0.7);
+          background-color: rgba(10, 127, 161, 0.7);
           border: 1px solid transparent;
           color: #cdcdcd;
           &::after {

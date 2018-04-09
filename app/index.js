@@ -1,6 +1,7 @@
 import 'normalize.css'
 import 'styles/index.scss'
 import Particles from 'particlesjs'
+import Landing from './components/Landing'
 import { selectElement } from './helpers'
 
 window.addEventListener('load', () => {
@@ -19,7 +20,10 @@ window.addEventListener('load', () => {
   })
 })
 
-document.addEventListener('DOMContentLoaded', () => {})
+document.addEventListener('DOMContentLoaded', () => {
+  const landing = new Landing('Lordwill Mabalot')
+  landing.renderLanding(selectElement('#welcome'))
+})
 
 const hideElement = element => {
   element.classList.add('hide')
