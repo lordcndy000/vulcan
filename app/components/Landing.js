@@ -14,6 +14,6 @@ export default class Landing {
       </div>
       <canvas class="particles"></canvas>`
 
-    container.innerHTML = html
+    return (container.innerHTML = html)
   }
 }

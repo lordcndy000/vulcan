@@ -12,6 +12,10 @@ main {
       margin: 0 20px;
       text-decoration: none;
       text-transform: uppercase;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: $colorAccent;
+      }
       &.active-nav {
         color: $colorAccent;
       }

@@ -2,6 +2,7 @@ import 'normalize.css'
 import 'styles/index.scss'
 import Particles from 'particlesjs'
 import Landing from './components/Landing'
+import Nav from './components/Nav'
 import { selectElement } from './helpers'
 
 window.addEventListener('load', () => {
@@ -22,7 +23,10 @@ window.addEventListener('load', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const landing = new Landing('Lordwill Mabalot')
-  landing.renderLanding(selectElement('#welcome'))
+  landing.renderLanding(selectElement('#home-section'))
+
+  const nav = new Nav(['Home', 'About', 'Porfolio', 'Contact'])
+  nav.renderNav(selectElement('#page-nav'))
 })
 
 const hideElement = element => {
