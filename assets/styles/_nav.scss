@@ -1,0 +1,19 @@
+main {
+  .main-nav {
+    background-color: $colorMain;
+    border-bottom: 2px solid $colorDark;
+    display: flex;
+    padding: 10px 30px;
+    width: 100%;
+    & > a {
+      color: #fff;
+      font-size: 18px;
+      margin: 0 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      &.active-nav {
+        color: $colorHighlight;
+      }
+    }
+  }
+}

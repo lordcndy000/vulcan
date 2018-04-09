@@ -1,1 +1,6 @@
-@import 'page';
+@import 'vars';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato');
+@import 'utils';
+@import 'section-welcome';
+@import 'nav';

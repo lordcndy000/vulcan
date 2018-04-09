@@ -7,10 +7,8 @@
   "author": "Lordwill Mabalot",
   "license": "MIT",
   "scripts": {
-    "dev":
-      "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
-    "build":
-      "webpack -p --progress --mode production --config webpack.config.build.js"
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
